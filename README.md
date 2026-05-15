@@ -89,23 +89,28 @@ MTS_v14 ưu tiên:
 # 📂 Cấu trúc Project
 
 ```bash
-mts-v14/
+mts-v14-studio/
 │
-├── core/
-│   ├── signal_read/
-│   ├── emotional_calibration/
-│   ├── human_filter/
-│   └── differentiation_engine/
+├── index.html
+├── README.md
+├── .gitignore
 │
-├── prompts/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── data.js
+│   │   ├── ui.js
+│   │   └── emotion.js
+│   │
+│   └── img/
+│       └── favicon.png
 │
-├── examples/
-│
-├── datasets/
-│
-├── outputs/
-│
-└── README.md
+└── .github/
+    └── workflows/
+        └── deploy.yml
 ```
 
 ---
