@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MTS v14 — Studio Tin Nhắn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div>
+      <div class="card hero">
+
+        <div class="tag">
+          ⚡ MTS v14 Response Studio
+        </div>
+
+        <h1>
+          AI viết tin nhắn
+          đúng vibe,
+          đúng nhịp.
+        </h1>
+
+        <p class="desc">
+          Công cụ mô phỏng cách nhắn tin tự nhiên kiểu Gen Z Việt Nam.
+          Tập trung vào cảm xúc, nhịp chat và human feel.
+        </p>
+
+        <div class="grid-2">
+
+          <div class="feature">
+            <h3>🧠 Phân tích tín hiệu</h3>
+            <p>Đọc cảm xúc và năng lượng cuộc chat.</p>
+          </div>
+
+          <div class="feature">
+            <h3>💬 6 kiểu phản hồi</h3>
+            <p>Tạo nhiều vibe trả lời khác nhau.</p>
+          </div>
+
+          <div class="feature">
+            <h3>🎯 Human feel</h3>
+            <p>Không viết kiểu AI hay coach tình cảm.</p>
+          </div>
+
+          <div class="feature">
+            <h3>📱 Responsive</h3>
+            <p>Chạy đẹp trên mobile và desktop.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+
+      <div class="title">
+        <span>Studio tạo phản hồi</span>
+        <div class="badge">MTS v14</div>
+      </div>
+
+      <div class="form-group">
+        <label>Tin nhắn cô ấy</label>
+
+        <textarea
+          id="message"
+          placeholder="Ví dụ: Nay em mệt quá..."
+        ></textarea>
+      </div>
+
+      <div class="controls">
+
+        <div class="form-group">
+          <label>Giai đoạn</label>
+
+          <select id="stage">
+            <option>Mới quen</option>
+            <option selected>Đang nói chuyện</option>
+            <option>Đã warm</option>
+            <option>Mutual rõ</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Mode</label>
+
+          <select id="mode">
+            <option selected>STUDIO</option>
+            <option>LIVE</option>
+            <option>ONE</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="btn-group">
+
+        <button
+          class="btn-primary"
+          onclick="generateReplies()"
+        >
+          Tạo phản hồi
+        </button>
+
+        <button
+          class="btn-secondary"
+          onclick="randomDemo()"
+        >
+          Demo nhanh
+        </button>
+
+      </div>
+
+      <div class="result-box" id="result">
+
+        <div class="analysis">
+          <h4>✨ Sẵn sàng</h4>
+
+          <p>
+            Nhập nội dung chat để tạo phản hồi.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
